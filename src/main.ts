@@ -112,10 +112,18 @@ async function enter(m: MuseumDef) {
   game.hidden = false;
   document.body.classList.add('playing');
   fitStage();
+  loading.textContent = 'CARGANDO…';
   loading.hidden = false;
   world = null;
   updateHud();
-  const built = await buildWorld(m, (id) => artUrl(id, 'wall'));
+  let built: World;
+  try {
+    built = await buildWorld(m, (id) => artUrl(id, 'wall'));
+  } catch (err) {
+    console.error(err);
+    if (museum === m) loading.textContent = 'NO SE PUDO CARGAR EL MUSEO. RECARGÁ LA PÁGINA.';
+    return;
+  }
   if (museum !== m) return;
   world = built;
   Object.assign(player, built.start);
@@ -282,6 +290,9 @@ for (const b of document.querySelectorAll<HTMLButtonElement>('#pad [data-k]')) {
   b.addEventListener('pointercancel', off);
   b.addEventListener('contextmenu', (e) => e.preventDefault());
 }
+
+// a clicked HUD button must not keep focus, or Space would press it again instead of opening the work
+for (const b of document.querySelectorAll<HTMLButtonElement>('#game button')) b.addEventListener('click', () => b.blur());
 
 // ---------- routing ----------
 function route() {

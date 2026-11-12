@@ -506,8 +506,12 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  .detail {
+    align-items: flex-start;
+  }
   .card {
     grid-template-columns: 1fr;
+    max-height: none;
     padding: 16px;
     gap: 16px;
   }

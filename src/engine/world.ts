@@ -79,9 +79,13 @@ const ANGLES = [-Math.PI / 2, 0, Math.PI / 2, Math.PI];
 export const decalKey = (w: number, x: number, y: number, face: number) => (y * w + x) * 4 + face;
 
 async function loadTex(url: string): Promise<Tex> {
+  // onload rather than decode(): decode() can stall while the tab is in the background
   const img = new Image();
-  img.src = url;
-  await img.decode();
+  await new Promise<void>((resolve, reject) => {
+    img.onload = () => resolve();
+    img.onerror = () => reject(new Error(`could not load ${url}`));
+    img.src = url;
+  });
   const cv = document.createElement('canvas');
   cv.width = img.naturalWidth;
   cv.height = img.naturalHeight;
@@ -150,7 +154,8 @@ export async function buildWorld(m: MuseumDef, artUrl: (id: string) => string): 
   let startAngle = ANGLES[doors[0].findIndex(Boolean)] ?? 0;
 
   if (total > paintings.length && slots[0].length) {
-    await document.fonts.load('8px "Press Start 2P"');
+    // never let a slow font block the museum: after a moment the sign falls back to the default face
+    await Promise.race([document.fonts.load('8px "Press Start 2P"'), new Promise((r) => setTimeout(r, 1500))]);
     const face = slots[0].shift()!;
     place(0, face, signDecal(wallTex, plain(m.short), plain(m.city), '"Press Start 2P"'), null);
     startAngle = ANGLES[face];
