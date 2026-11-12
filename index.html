@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Pixel Museums — museos del mundo en 8 bits</title>
+    <meta name="description" content="Caminá en primera persona por los museos más famosos del mundo y descubrí sus obras maestras, todo en píxeles." />
+    <meta property="og:title" content="Pixel Museums" />
+    <meta property="og:description" content="Los museos más famosos del mundo, en 8 bits." />
+    <meta name="theme-color" content="#14121c" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main id="lobby">
+      <header class="hero">
+        <p class="kicker">★ ENTRADA LIBRE ★</p>
+        <h1>PIXEL<br />MUSEUMS</h1>
+        <p class="lead">Los museos más famosos del mundo, sala por sala y píxel por píxel. Elegí uno, caminá por sus galerías y acercate a cada obra para conocer su historia.</p>
+      </header>
+      <section id="museums" class="grid" aria-label="Museos"></section>
+      <footer class="foot">
+        <p>Las obras son reproducciones pixeladas de imágenes de dominio público o con licencia libre de Wikimedia Commons. <a href="https://github.com/jonymusky/pixel-museums/blob/main/CREDITS.md">Créditos</a> · <a href="https://github.com/jonymusky/pixel-museums">Código</a></p>
+      </footer>
+    </main>
+
+    <div id="game" hidden>
+      <div id="stage">
+        <canvas id="view" aria-label="Vista del museo"></canvas>
+        <div class="hud top">
+          <div class="hud-left">
+            <button id="exit" class="btn" type="button">◀ MUSEOS</button>
+            <button id="map" class="btn" type="button" aria-pressed="true">MAPA</button>
+          </div>
+          <div class="where"><span id="hud-name"></span><span id="hud-count"></span></div>
+          <span></span>
+        </div>
+        <div id="crosshair" aria-hidden="true"></div>
+        <button id="prompt" class="prompt" type="button" hidden></button>
+        <div id="hint" class="hint"></div>
+        <div id="loading" class="loading" hidden>CARGANDO…</div>
+      </div>
+      <div id="pad" aria-label="Controles táctiles">
+        <div class="dpad">
+          <button data-k="ArrowUp" class="pb up" type="button" aria-label="Avanzar">▲</button>
+          <button data-k="ArrowLeft" class="pb left" type="button" aria-label="Girar a la izquierda">◀</button>
+          <button data-k="ArrowRight" class="pb right" type="button" aria-label="Girar a la derecha">▶</button>
+          <button data-k="ArrowDown" class="pb down" type="button" aria-label="Retroceder">▼</button>
+        </div>
+        <button id="act" class="pb act" type="button">VER</button>
+      </div>
+    </div>
+
+    <div id="detail" class="detail" hidden role="dialog" aria-modal="true" aria-labelledby="d-title">
+      <article class="card">
+        <button id="d-close" class="btn close" type="button" aria-label="Cerrar">✕</button>
+        <figure class="art"><img id="d-img" alt="" /></figure>
+        <div class="meta">
+          <p id="d-kicker" class="kicker"></p>
+          <h2 id="d-title"></h2>
+          <p id="d-artist" class="artist"></p>
+          <dl id="d-facts" class="facts"></dl>
+          <p id="d-story" class="story"></p>
+          <p id="d-credit" class="credit"></p>
+        </div>
+      </article>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

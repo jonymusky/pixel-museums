@@ -1,0 +1,240 @@
+{
+  "museums": [
+    {
+      "id": "louvre",
+      "name": "Museo del Louvre",
+      "short": "Louvre",
+      "city": "París",
+      "country": "Francia",
+      "founded": "1793",
+      "blurb": "Un antiguo palacio real convertido en el museo más visitado del planeta.",
+      "theme": { "wallStyle": "damask", "wall": [124, 36, 40], "trim": [86, 54, 34], "floorStyle": "herring", "floorA": [156, 108, 62], "floorB": [130, 88, 48], "ceil": [216, 206, 182], "accent": "#e0b040" },
+      "layout": [[0, 0], [1, 0], [2, 0], [3, 0]],
+      "works": [
+        { "id": "mona-lisa", "qid": "Q12418", "kind": "painting", "year": "c. 1503–1519", "title": "La Gioconda (Mona Lisa)", "artist": "Leonardo da Vinci", "medium": "Óleo sobre tabla de álamo", "story": "Leonardo la pintó sobre una tabla de álamo y nunca la entregó: la llevó consigo hasta su muerte en Francia. Su sonrisa nace del sfumato, capas finísimas de pintura sin bordes visibles. En 1911 fue robada del Louvre y estuvo más de dos años desaparecida; el escándalo la volvió el cuadro más famoso del mundo." },
+        { "id": "libertad-guiando", "qid": "Q29530", "kind": "painting", "story": "Delacroix pintó la revolución de julio de 1830, que derrocó al rey Carlos X. La Libertad, con gorro frigio y la bandera tricolor, avanza sobre una barricada junto a obreros, burgueses y un chico con pistolas. El Estado la compró y después la guardó durante años por considerarla demasiado incendiaria." },
+        { "id": "balsa-medusa", "qid": "Q212616", "kind": "painting", "story": "Géricault tenía 27 años cuando retrató un escándalo real: el naufragio de la fragata Méduse en 1816, cuyos sobrevivientes quedaron a la deriva en una balsa improvisada. Entrevistó a sobrevivientes y estudió cadáveres en la morgue para lograr el realismo. La tela mide casi cinco metros por siete." },
+        { "id": "coronacion-napoleon", "qid": "Q1231009", "kind": "painting", "story": "David registró la coronación de Napoleón en Notre-Dame, el 2 de diciembre de 1804, en una tela de casi diez metros de ancho. El momento elegido es cuando el emperador corona a Josefina. Incluyó a la madre de Napoleón en el palco central, aunque ella no asistió a la ceremonia." },
+        { "id": "bodas-cana", "qid": "Q185255", "kind": "painting", "story": "Es la pintura más grande del Louvre: casi siete metros de alto por diez de ancho. Veronés la pintó para el refectorio del monasterio de San Giorgio Maggiore, en Venecia, y convirtió el milagro bíblico en un banquete veneciano con más de cien figuras. Las tropas de Napoleón se la llevaron a París en 1798." },
+        { "id": "encajera", "qid": "Q1216387", "kind": "painting", "year": "c. 1669–1670", "story": "Con apenas 24 por 21 centímetros, es una de las obras más pequeñas de Vermeer. Una joven se concentra en su encaje de bolillos mientras los hilos rojos y blancos del primer plano se desdibujan, como fuera de foco. Renoir la consideraba una de las pinturas más bellas del mundo." },
+        { "id": "gran-odalisca", "qid": "Q1978815", "kind": "painting", "story": "Ingres la pintó por encargo de Carolina Murat, hermana de Napoleón y reina de Nápoles. Los críticos de 1819 se burlaron de su anatomía imposible: la espalda parece tener varias vértebras de más. Ingres alargó el cuerpo a propósito, buscando una línea elegante antes que la exactitud." },
+        { "id": "venus-milo", "qid": "Q151952", "kind": "object", "sprite": "venus", "material": "marble", "year": "Siglo II a. C.", "artist": "Atribuida a Alejandro de Antioquía", "medium": "Mármol", "story": "Un campesino la encontró en 1820 en la isla griega de Milo, partida en dos bloques. Se la identifica con Afrodita, aunque nunca aparecieron sus brazos, y ese misterio es parte de su fama. Mide poco más de dos metros." },
+        { "id": "victoria-samotracia", "qid": "Q216402", "kind": "object", "sprite": "winged", "material": "marble", "year": "c. 190 a. C.", "artist": "Autor desconocido", "medium": "Mármol", "story": "Representa a Niké, la diosa de la victoria, posándose sobre la proa de un barco. Fue hallada en 1863 en la isla de Samotracia, rota en más de cien fragmentos, sin cabeza ni brazos. Hoy corona la escalera Daru del Louvre, donde parece seguir luchando contra el viento." }
+      ]
+    },
+    {
+      "id": "prado",
+      "name": "Museo Nacional del Prado",
+      "short": "Museo del Prado",
+      "city": "Madrid",
+      "country": "España",
+      "founded": "1819",
+      "blurb": "La gran casa de Velázquez, Goya y el Bosco, nacida de las colecciones reales españolas.",
+      "theme": { "wallStyle": "panel", "wall": [72, 88, 96], "trim": [58, 52, 50], "floorStyle": "marble", "floorA": [176, 168, 156], "floorB": [120, 112, 104], "ceil": [222, 218, 206], "accent": "#e0705c" },
+      "layout": [[0, 0], [1, 0], [2, 0], [2, 1], [2, 2]],
+      "works": [
+        { "id": "meninas", "qid": "Q208758", "kind": "painting", "story": "Velázquez se pintó a sí mismo trabajando frente a un gran lienzo, mientras la infanta Margarita y su séquito miran hacia afuera del cuadro. En el espejo del fondo se reflejan los reyes Felipe IV y Mariana: quizá ocupan el lugar exacto donde estás parado vos. Es una de las pinturas más analizadas de la historia." },
+        { "id": "jardin-delicias", "qid": "Q321303", "kind": "painting", "year": "c. 1490–1500", "story": "Un tríptico que se lee de izquierda a derecha: el Paraíso con Adán y Eva; un jardín lleno de figuras desnudas, frutas gigantes y aves; y un infierno oscuro donde los instrumentos musicales son máquinas de tortura. Felipe II lo envió al monasterio de El Escorial en 1593. Su significado todavía se discute." },
+        { "id": "tres-de-mayo", "qid": "Q1091086", "kind": "painting", "story": "Goya pintó en 1814 los fusilamientos de madrileños por las tropas de Napoleón tras el levantamiento del 2 de mayo de 1808. El hombre de camisa blanca, con los brazos abiertos frente a un pelotón sin rostro, se volvió un símbolo universal contra la guerra. Inspiró después a Manet y a Picasso." },
+        { "id": "saturno", "qid": "Q1150997", "kind": "painting", "year": "c. 1820–1823", "medium": "Óleo sobre revoco, trasladado a lienzo", "story": "Es una de las catorce Pinturas negras que Goya, ya sordo y enfermo, pintó directamente sobre las paredes de su casa, la Quinta del Sordo. No les puso título ni pensó exhibirlas. Décadas después de su muerte fueron arrancadas del muro y pasadas a lienzo." },
+        { "id": "descendimiento", "qid": "Q568847", "kind": "painting", "title": "El Descendimiento", "year": "antes de 1443", "story": "Van der Weyden lo pintó para la capilla del gremio de ballesteros de Lovaina; por eso hay pequeñas ballestas en las esquinas. Las figuras, casi de tamaño natural, parecen esculturas pintadas dentro de una caja dorada. El cuerpo de Cristo y el de María desmayada repiten la misma curva." },
+        { "id": "maja-desnuda", "qid": "Q152867", "kind": "painting", "title": "La maja desnuda", "year": "c. 1795–1800", "story": "Una mujer desnuda que mira de frente, sin excusa mitológica: algo insólito en la España de su época. Perteneció al ministro Manuel Godoy, que la tenía junto a su pareja, La maja vestida. En 1815 la Inquisición llamó a Goya a declarar por ella." },
+        { "id": "triunfo-muerte", "qid": "Q644856", "kind": "painting", "year": "c. 1562", "story": "Un ejército de esqueletos arrasa un paisaje en llamas y no perdona a nadie: reyes, cardenales, campesinos y enamorados caen por igual. Bruegel retomó el tema medieval de la danza de la muerte y lo llevó a escala de batalla. Cada rincón de la tabla esconde una escena distinta." },
+        { "id": "rendicion-breda", "qid": "Q1133420", "kind": "painting", "year": "c. 1635", "story": "También llamada Las lanzas. Muestra al holandés Justino de Nassau entregando las llaves de Breda al general Ambrosio Spínola, en 1625. En lugar de humillar al vencido, Spínola le apoya la mano en el hombro: ese gesto de respeto es el verdadero tema del cuadro. Fue pintado para el Salón de Reinos del palacio del Buen Retiro." }
+      ]
+    },
+    {
+      "id": "uffizi",
+      "name": "Galería Uffizi",
+      "short": "Galería Uffizi",
+      "city": "Florencia",
+      "country": "Italia",
+      "founded": "1581",
+      "blurb": "Las oficinas de los Médici, hoy el mayor tesoro del Renacimiento italiano.",
+      "theme": { "wallStyle": "panel", "wall": [206, 186, 146], "trim": [128, 84, 58], "floorStyle": "checker", "floorA": [168, 92, 62], "floorB": [206, 180, 140], "ceil": [112, 74, 50], "accent": "#e89848" },
+      "layout": [[0, 1], [0, 0], [1, 0], [2, 0], [2, 1]],
+      "works": [
+        { "id": "nacimiento-venus", "qid": "Q151047", "kind": "painting", "year": "c. 1485", "story": "Venus llega a la orilla sobre una concha, empujada por el soplo de los vientos, mientras una figura la espera con un manto. Botticelli la pintó sobre lienzo, algo poco común en la Florencia de su época, probablemente para la familia Médici. Fue uno de los primeros grandes desnudos mitológicos desde la Antigüedad." },
+        { "id": "primavera", "qid": "Q549847", "kind": "painting", "year": "c. 1480", "medium": "Temple sobre tabla", "story": "Nueve figuras mitológicas en un bosque de naranjos: Venus en el centro, las tres Gracias bailando, Mercurio y, a la derecha, el viento Céfiro que persigue a la ninfa Cloris, transformada en Flora. Los botánicos identificaron cientos de especies de plantas en el prado. Su significado exacto sigue en debate." },
+        { "id": "anunciacion-leonardo", "qid": "Q1217213", "kind": "painting", "title": "La Anunciación", "year": "c. 1472–1476", "artist": "Leonardo da Vinci", "story": "Una obra de juventud de Leonardo, pintada cuando todavía trabajaba en el taller de Verrocchio. El ángel Gabriel se arrodilla en un jardín frente a María, con alas copiadas de las de un ave real. El paisaje brumoso del fondo ya anuncia el estilo de sus obras maduras." },
+        { "id": "venus-urbino", "qid": "Q727875", "kind": "painting", "story": "Tiziano la pintó para Guidobaldo della Rovere, futuro duque de Urbino. La joven mira directo al espectador desde su cama, en un interior doméstico con un perrito dormido y dos criadas al fondo. Siglos después, Manet la tomó como modelo para su Olympia." },
+        { "id": "tondo-doni", "qid": "Q1473546", "kind": "painting", "year": "c. 1506", "story": "Es la única pintura sobre tabla de Miguel Ángel que se conserva terminada. La encargó el mercader Agnolo Doni y todavía mantiene su marco original. Los cuerpos torneados y los colores brillantes anticipan lo que haría poco después en la bóveda de la Capilla Sixtina." },
+        { "id": "medusa", "qid": "Q2293905", "kind": "painting", "title": "Medusa", "year": "c. 1597", "story": "Caravaggio pintó la cabeza recién cortada de Medusa sobre un escudo de madera convexo, pensado como regalo para el gran duque Fernando I de Médici. El rostro que grita, con serpientes en lugar de cabello, sería un autorretrato del pintor." },
+        { "id": "baco", "qid": "Q2011510", "kind": "painting", "year": "c. 1596–1597", "story": "Un Baco joven, con cara de muchacho romano y las uñas sucias, ofrece una copa de vino con la mano izquierda. La canasta incluye fruta golpeada y podrida, un realismo típico de Caravaggio. Pasó siglos olvidado en los depósitos de los Uffizi, hasta comienzos del siglo XX." },
+        { "id": "virgen-jilguero", "qid": "Q2344505", "kind": "painting", "year": "c. 1505–1506", "story": "Rafael la pintó en Florencia como regalo de bodas para su amigo Lorenzo Nasi. María, el niño Jesús y san Juan niño, que sostiene un jilguero, forman una pirámide inspirada en Leonardo. En 1547 un derrumbe de la casa de los Nasi la partió en diecisiete pedazos; su última restauración duró diez años y terminó en 2008." }
+      ]
+    },
+    {
+      "id": "vaticano",
+      "name": "Museos Vaticanos",
+      "short": "Museos Vaticanos",
+      "city": "Ciudad del Vaticano",
+      "country": "Vaticano",
+      "founded": "1506",
+      "blurb": "Cinco siglos de colecciones papales que desembocan en la Capilla Sixtina.",
+      "theme": { "wallStyle": "stone", "wall": [196, 184, 160], "trim": [150, 138, 118], "floorStyle": "checker", "floorA": [226, 220, 206], "floorB": [70, 66, 74], "ceil": [190, 160, 90], "accent": "#f0c850" },
+      "layout": [[0, 0], [1, 0], [1, 1], [0, 1]],
+      "links": [[3, 0]],
+      "works": [
+        { "id": "escuela-atenas", "qid": "Q186953", "kind": "painting", "year": "1509–1511", "medium": "Fresco", "story": "Rafael reunió a los grandes filósofos de la Antigüedad bajo una arquitectura monumental. En el centro, Platón señala el cielo y Aristóteles la tierra. Varios tienen rostros de artistas de su tiempo: Platón se parece a Leonardo y el pensativo Heráclito, a Miguel Ángel. Decora la Estancia de la Signatura." },
+        { "id": "creacion-adan", "qid": "Q500242", "kind": "painting", "year": "c. 1511", "medium": "Fresco", "story": "Es la escena más famosa de la bóveda de la Capilla Sixtina, que Miguel Ángel pintó entre 1508 y 1512 por encargo del papa Julio II. Los dedos de Dios y de Adán están a punto de tocarse, pero no llegan: en ese espacio mínimo está toda la tensión de la obra." },
+        { "id": "juicio-final", "qid": "Q567861", "kind": "painting", "year": "1536–1541", "medium": "Fresco", "story": "Miguel Ángel volvió a la Capilla Sixtina más de veinte años después de la bóveda para cubrir toda la pared del altar. Cristo juez ocupa el centro de un remolino de cientos de figuras. Los desnudos causaron escándalo y, poco después, se mandó cubrirlos con paños pintados." },
+        { "id": "transfiguracion", "qid": "Q2344437", "kind": "painting", "year": "1516–1520", "story": "Fue la última pintura de Rafael, que murió en 1520 a los 37 años; según Vasari, la tabla fue colocada junto a su lecho de muerte. Combina dos episodios: arriba, Cristo transfigurado en luz; abajo, los apóstoles que no logran curar a un muchacho poseído." },
+        { "id": "entierro-cristo", "qid": "Q1213151", "kind": "painting", "title": "El entierro de Cristo", "year": "c. 1603–1604", "story": "Caravaggio lo pintó para una capilla de la Chiesa Nuova de Roma. El cuerpo pesado de Cristo desciende hacia una losa cuya esquina parece salir del cuadro, hacia el espectador. Fue una de sus pocas obras admiradas sin reservas en su tiempo; Rubens hizo una copia." },
+        { "id": "laocoonte", "qid": "Q465762", "kind": "object", "sprite": "group", "material": "marble", "year": "Siglo I a. C. – siglo I d. C.", "artist": "Agesandro, Polidoro y Atenodoro de Rodas", "medium": "Mármol", "story": "El sacerdote troyano Laocoonte y sus hijos son atacados por serpientes marinas enviadas por los dioses. La escultura fue desenterrada en un viñedo de Roma en 1506, y Miguel Ángel estuvo entre los primeros en verla. El papa Julio II la compró enseguida: con ella nació la colección de los Museos Vaticanos." },
+        { "id": "apolo-belvedere", "qid": "Q619135", "kind": "object", "sprite": "figure", "material": "marble", "year": "c. 120–140 d. C.", "artist": "Copia romana de un bronce atribuido a Leocares", "medium": "Mármol", "story": "Durante siglos fue considerada el ideal absoluto de belleza clásica; el historiador Winckelmann la llamó la más alta expresión del arte antiguo. El dios acaba de disparar una flecha con un arco que ya no se conserva. Está en el Vaticano desde comienzos del siglo XVI." },
+        { "id": "augusto-prima-porta", "qid": "Q667124", "kind": "object", "sprite": "figure", "material": "marble", "year": "Siglo I d. C.", "artist": "Autor desconocido", "medium": "Mármol", "story": "Retrato del primer emperador romano arengando a sus tropas. Fue hallada en 1863 en la villa de Livia, su esposa, en Prima Porta. La coraza narra la devolución de los estandartes romanos por los partos, y originalmente la estatua estaba pintada de colores vivos." },
+        { "id": "torso-belvedere", "qid": "Q2551806", "kind": "object", "sprite": "torso", "material": "marble", "year": "Siglo I a. C.", "artist": "Apolonio de Atenas", "medium": "Mármol", "story": "Un fragmento sin cabeza, brazos ni piernas, firmado por Apolonio de Atenas. Miguel Ángel lo admiraba tanto que su musculatura retorcida reaparece en las figuras de la Capilla Sixtina. Según la tradición, se negó a completar las partes faltantes." }
+      ]
+    },
+    {
+      "id": "rijksmuseum",
+      "name": "Rijksmuseum",
+      "short": "Rijksmuseum",
+      "city": "Ámsterdam",
+      "country": "Países Bajos",
+      "founded": "1800",
+      "blurb": "El Siglo de Oro neerlandés bajo un mismo techo: Rembrandt, Vermeer y compañía.",
+      "theme": { "wallStyle": "panel", "wall": [54, 60, 72], "trim": [36, 38, 46], "floorStyle": "wood", "floorA": [150, 116, 78], "floorB": [134, 100, 64], "ceil": [200, 200, 196], "accent": "#f08a3c" },
+      "layout": [[0, 0], [1, 0], [2, 0], [1, 1]],
+      "chain": false,
+      "links": [[0, 1], [1, 2], [1, 3]],
+      "works": [
+        { "id": "ronda-noche", "qid": "Q219831", "kind": "painting", "story": "Rembrandt rompió con el retrato de grupo tradicional y pintó a la compañía del capitán Frans Banninck Cocq en pleno movimiento. No es una escena nocturna: se la llamó así por el barniz oscurecido. En 1715 fue recortada para que entrara en una pared del Ayuntamiento de Ámsterdam." },
+        { "id": "lechera", "qid": "Q167605", "kind": "painting", "year": "c. 1660", "story": "Una criada vierte leche con total concentración en una cocina silenciosa. Vermeer hizo brillar el pan y la cerámica con pequeños puntos de luz, y usó el costoso azul ultramar para el delantal. Es una escena mínima convertida en monumento." },
+        { "id": "novia-judia", "qid": "Q766782", "kind": "painting", "year": "c. 1665–1669", "story": "El título es un invento del siglo XIX: no se sabe quiénes son los retratados, quizá una pareja caracterizada como Isaac y Rebeca. Rembrandt aplicó la pintura de la manga dorada en capas tan gruesas que parece un relieve. Van Gogh dijo que daría diez años de su vida por quedarse dos semanas frente a ella." },
+        { "id": "cisne-amenazado", "qid": "Q17319634", "kind": "painting", "year": "c. 1650", "story": "Un cisne defiende su nido de un perro que se acerca nadando. Años después alguien agregó inscripciones que lo convirtieron en alegoría política: el cisne sería el estadista Johan de Witt protegiendo a Holanda. En 1800 fue la primera adquisición de la Nationale Konst-Gallery, antecesora del Rijksmuseum." },
+        { "id": "callejuela", "qid": "Q586035", "kind": "painting", "year": "c. 1658", "story": "Una fachada de ladrillo, dos mujeres trabajando y unos chicos jugando en la vereda: una de las dos únicas vistas urbanas que se conocen de Vermeer. En 2015 un historiador propuso que representa la calle Vlamingstraat de Delft, donde vivía una tía del pintor." },
+        { "id": "batalla-waterloo", "qid": "Q11688247", "kind": "painting", "title": "La batalla de Waterloo", "story": "Con más de ocho metros de ancho, es la pintura más grande del Rijksmuseum. El duque de Wellington, en el centro, recibe la noticia de que llegan los refuerzos prusianos. A la izquierda yace herido el príncipe de Orange, futuro rey Guillermo II de los Países Bajos." },
+        { "id": "autorretrato-pablo", "qid": "Q2267759", "kind": "painting", "title": "Autorretrato como el apóstol Pablo", "story": "A los 55 años, Rembrandt se retrató con los atributos de san Pablo: la espada que asoma bajo el manto y un manuscrito en la mano. Es el único autorretrato en el que asume un personaje bíblico. Mira al espectador con las cejas levantadas, entre cansado e irónico." }
+      ]
+    },
+    {
+      "id": "national-gallery",
+      "name": "National Gallery",
+      "short": "National Gallery",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "founded": "1824",
+      "blurb": "Sobre Trafalgar Square, siete siglos de pintura europea con entrada gratuita.",
+      "theme": { "wallStyle": "damask", "wall": [36, 70, 98], "trim": [84, 58, 36], "floorStyle": "wood", "floorA": [140, 96, 56], "floorB": [120, 80, 46], "ceil": [220, 212, 190], "accent": "#6cb4e8" },
+      "layout": [[0, 0], [1, 0], [2, 0], [2, 1], [1, 1], [0, 1]],
+      "links": [[5, 0]],
+      "works": [
+        { "id": "girasoles", "qid": "Q21948567", "kind": "painting", "title": "Los girasoles", "story": "Van Gogh pintó esta serie en Arlés, en agosto de 1888, para decorar el cuarto donde se alojaría su amigo Gauguin. Usó casi exclusivamente tonos de amarillo, aprovechando pigmentos nuevos de su época. Las flores aparecen en todas sus etapas, desde el pleno florecimiento hasta marchitas." },
+        { "id": "arnolfini", "qid": "Q220859", "kind": "painting", "title": "El matrimonio Arnolfini", "medium": "Óleo sobre tabla de roble", "story": "Retrato de un mercader italiano y su esposa en su casa de Brujas. En el espejo convexo del fondo se reflejan dos figuras que entran a la habitación, y arriba el pintor firmó: «Jan van Eyck estuvo aquí, 1434». La mujer no está embarazada: se recoge el vestido según la moda." },
+        { "id": "temerario", "qid": "Q257580", "kind": "painting", "title": "El «Temerario» remolcado a su último atraque", "story": "El Temeraire, veterano de la batalla de Trafalgar, es remolcado por un vapor hacia su desguace en 1838. Turner contrapone el viejo velero, casi fantasmal, con el remolcador oscuro y humeante bajo un atardecer encendido: el fin de una era. Nunca quiso venderlo." },
+        { "id": "embajadores", "qid": "Q1212937", "kind": "painting", "medium": "Óleo sobre tabla de roble", "story": "Dos diplomáticos franceses posan entre instrumentos científicos, libros y un laúd con una cuerda rota. En el piso flota una mancha extraña: vista desde un costado se revela como una calavera en anamorfosis, un recordatorio de la muerte escondido a plena vista." },
+        { "id": "carreta-heno", "qid": "Q2366825", "kind": "painting", "story": "Un carro cruza el río Stour junto a la casa de Willy Lott, en Suffolk, cerca del molino del padre del pintor. En Londres pasó casi inadvertido, pero en el Salón de París de 1824 ganó una medalla de oro e influyó en los pintores franceses." },
+        { "id": "banistas-asnieres", "qid": "Q1090837", "kind": "painting", "title": "Bañistas en Asnières", "story": "La primera gran tela de Seurat, pintada a los 24 años: obreros descansando a orillas del Sena, con las chimeneas de las fábricas de Clichy al fondo. El Salón de 1884 la rechazó. Años después Seurat retocó algunas zonas con los puntos de color que lo harían famoso." },
+        { "id": "venus-espejo", "qid": "Q275349", "kind": "painting", "title": "La Venus del espejo", "year": "c. 1647–1651", "story": "Es el único desnudo femenino que se conserva de Velázquez, un género raro y riesgoso en la España de la Inquisición. Venus aparece de espaldas y su rostro se ve borroso en el espejo que sostiene Cupido. En 1914 la sufragista Mary Richardson la atacó con un hacha de carnicero; fue restaurada." },
+        { "id": "virgen-rocas", "qid": "Q4009972", "kind": "painting", "year": "c. 1491–1508", "artist": "Leonardo da Vinci", "medium": "Óleo sobre tabla de álamo", "story": "Leonardo pintó dos versiones de esta escena; la primera está en el Louvre. María, el niño Jesús, san Juan niño y un ángel se reúnen en una gruta, envueltos en penumbra. Fue encargada para una capilla de la iglesia de San Francesco Grande, en Milán." }
+      ]
+    },
+    {
+      "id": "orsay",
+      "name": "Museo de Orsay",
+      "short": "Museo de Orsay",
+      "city": "París",
+      "country": "Francia",
+      "founded": "1986",
+      "blurb": "Una estación de tren de 1900 que hoy guarda la mayor colección impresionista.",
+      "theme": { "wallStyle": "stone", "wall": [190, 182, 168], "trim": [140, 132, 120], "floorStyle": "marble", "floorA": [200, 194, 180], "floorB": [150, 142, 130], "ceil": [150, 176, 168], "accent": "#7fd0bc" },
+      "layout": [[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]],
+      "works": [
+        { "id": "noche-rodano", "qid": "Q1464531", "kind": "painting", "title": "Noche estrellada sobre el Ródano", "story": "Van Gogh la pintó en Arlés, de noche y al aire libre, a pocos minutos de la Casa Amarilla donde vivía. Las luces de gas de la ciudad se reflejan en el río bajo las estrellas de la Osa Mayor. Es un año anterior a la célebre Noche estrellada del MoMA." },
+        { "id": "moulin-galette", "qid": "Q683274", "kind": "painting", "story": "Un domingo a la tarde en un baile popular de Montmartre. Renoir retrató a sus amigos bailando y conversando bajo los árboles, con manchas de sol que se filtran entre las hojas. Fue presentada en la tercera exposición impresionista, en 1877." },
+        { "id": "almuerzo-hierba", "qid": "Q152509", "kind": "painting", "story": "Una mujer desnuda almuerza con dos hombres vestidos a la moda y mira de frente, sin pudor. El jurado del Salón de 1863 la rechazó y se exhibió en el Salón de los Rechazados, donde provocó un escándalo. Suele señalarse como un punto de partida del arte moderno." },
+        { "id": "olympia", "qid": "Q737062", "kind": "painting", "story": "Manet tomó la Venus de Urbino de Tiziano y la convirtió en una cortesana parisina que mira al espectador con frialdad. En el Salón de 1865 causó tal indignación que hubo que colgarla bien alto para protegerla del público. La modelo fue Victorine Meurent, también pintora." },
+        { "id": "espigadoras", "qid": "Q1368055", "kind": "painting", "story": "Tres campesinas recogen las espigas que quedaron después de la cosecha, un derecho reservado a los más pobres. Al fondo, lejos, se ve la abundancia de los campos. En 1857 parte de la crítica la consideró peligrosa por dar a simples trabajadoras una dignidad monumental." },
+        { "id": "madre-whistler", "qid": "Q687182", "kind": "painting", "title": "La madre de Whistler", "story": "Whistler la tituló como una pieza musical, Arreglo en gris y negro n.º 1: le interesaba la armonía de tonos más que el retrato. La modelo es su madre, Anna, de 67 años. Francia la compró en 1891 y con el tiempo se volvió un ícono de la maternidad." },
+        { "id": "jugadores-cartas", "qid": "Q1165042", "kind": "painting", "year": "c. 1890–1895", "story": "Cézanne pintó cinco versiones de campesinos jugando a las cartas en Aix-en-Provence; esta es de las más sobrias, con solo dos jugadores. No hay drama ni anécdota: los cuerpos son casi volúmenes geométricos, y la botella marca el eje de la mesa." },
+        { "id": "autorretrato-van-gogh", "qid": "Q3630735", "kind": "painting", "title": "Autorretrato", "story": "Uno de los últimos autorretratos de Van Gogh, pintado en septiembre de 1889 en el asilo de Saint-Rémy. El fondo de remolinos azulados vibra alrededor de una figura rígida y de mirada fija. Se lo llevó consigo a Auvers, donde lo vio su médico, el doctor Gachet." }
+      ]
+    },
+    {
+      "id": "met",
+      "name": "Metropolitan Museum of Art",
+      "short": "The Met",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "founded": "1870",
+      "blurb": "Cinco mil años de arte de todo el mundo frente al Central Park.",
+      "theme": { "wallStyle": "panel", "wall": [150, 134, 110], "trim": [226, 220, 206], "floorStyle": "herring", "floorA": [164, 120, 72], "floorB": [144, 102, 58], "ceil": [228, 224, 214], "accent": "#e85a50" },
+      "layout": [[0, 0], [1, 0], [1, 1], [2, 1], [2, 2]],
+      "works": [
+        { "id": "washington-delaware", "qid": "Q509806", "kind": "painting", "story": "Washington cruza el río Delaware helado en la noche de Navidad de 1776, antes de sorprender a las tropas enemigas en Trenton. Leutze lo pintó en Alemania, usando el Rin como modelo. Tiene errores históricos célebres, como la bandera, que todavía no existía, pero se volvió una imagen fundacional de Estados Unidos." },
+        { "id": "muerte-socrates", "qid": "Q1752990", "kind": "painting", "story": "Condenado a muerte por Atenas, Sócrates sigue enseñando mientras tiende la mano hacia la copa de cicuta. Sus discípulos se desesperan; él es el único sereno. David la pintó dos años antes de la Revolución Francesa, como ejemplo de fidelidad a los propios principios." },
+        { "id": "madame-x", "qid": "Q2664039", "kind": "painting", "title": "Madame X", "artist": "John Singer Sargent", "story": "Retrato de Virginie Gautreau, una estadounidense célebre en la alta sociedad de París. En el Salón de 1884 escandalizó: originalmente un tirante del vestido caía del hombro. Sargent lo repintó en su lugar, pero el daño estaba hecho y se mudó a Londres. Al venderlo al Met dijo que quizá era lo mejor que había hecho." },
+        { "id": "trigal-cipreses", "qid": "Q18689458", "kind": "painting", "story": "Pintado en el verano de 1889, mientras Van Gogh estaba internado en el asilo de Saint-Rémy. Consideraba esta vista uno de sus mejores paisajes. Los cipreses, que comparaba con obeliscos egipcios, se retuercen junto al trigo dorado bajo un cielo de nubes en remolino." },
+        { "id": "cosechadores", "qid": "Q776175", "kind": "painting", "title": "Los cosechadores", "story": "Forma parte de una serie de seis tablas sobre las estaciones del año, de las que sobreviven cinco. Representa el final del verano: unos campesinos siegan el trigo mientras otros almuerzan y duermen bajo un peral. Se la considera un hito en la historia de la pintura de paisaje." },
+        { "id": "juan-de-pareja", "qid": "Q4717953", "kind": "painting", "story": "Juan de Pareja era esclavo y ayudante en el taller de Velázquez. El pintor lo retrató en Roma en 1650 y exhibió el cuadro en el Panteón, donde causó sensación por su verdad. Meses después le otorgó la libertad, y Pareja siguió su carrera como pintor independiente." },
+        { "id": "vista-toledo", "qid": "Q883994", "kind": "painting", "year": "c. 1599–1600", "story": "Uno de los primeros paisajes puros del arte español. El Greco no buscó exactitud: reordenó los edificios de Toledo a su gusto y los puso bajo un cielo de tormenta casi sobrenatural. Es uno de los dos únicos paisajes que se conservan del pintor." },
+        { "id": "perseo-canova", "qid": "Q29383614", "kind": "object", "sprite": "figure", "material": "marble", "year": "1804–1806", "medium": "Mármol", "story": "Perseo sostiene la cabeza de Medusa recién cortada. Canova talló una primera versión, hoy en los Museos Vaticanos; esta segunda fue encargada por la condesa polaca Valeria Tarnowska. La postura se inspira en el Apolo del Belvedere." }
+      ]
+    },
+    {
+      "id": "britanico",
+      "name": "Museo Británico",
+      "short": "Museo Británico",
+      "city": "Londres",
+      "country": "Reino Unido",
+      "founded": "1753",
+      "blurb": "El primer museo público nacional del mundo, y también el más discutido.",
+      "theme": { "wallStyle": "stone", "wall": [176, 172, 164], "trim": [128, 124, 118], "floorStyle": "marble", "floorA": [214, 212, 206], "floorB": [150, 150, 150], "ceil": [196, 204, 212], "accent": "#70a8e0" },
+      "layout": [[0, 0], [1, 0], [1, 1], [0, 1]],
+      "links": [[3, 0]],
+      "works": [
+        { "id": "marmoles-partenon", "qid": "Q606662", "kind": "painting", "title": "Mármoles del Partenón", "year": "c. 447–432 a. C.", "artist": "Taller de Fidias", "medium": "Mármol", "file": "Frieze of the Parthenon, British Museum - 1.jpg", "story": "Esculturas y relieves que decoraban el Partenón de Atenas. A comienzos del siglo XIX, lord Elgin hizo retirar cerca de la mitad de las que sobrevivían y las vendió al Estado británico en 1816. Grecia pide su regreso desde hace décadas: es la disputa de patrimonio más famosa del mundo." },
+        { "id": "estandarte-ur", "qid": "Q524447", "kind": "painting", "year": "c. 2500 a. C.", "artist": "Sumeria", "medium": "Concha, lapislázuli y piedra caliza roja sobre madera", "story": "Una caja cubierta de mosaicos, hallada en el Cementerio Real de Ur, en el actual Irak. Un lado muestra la guerra, con carros y prisioneros; el otro la paz, con un banquete. Nadie sabe para qué servía: lo de «estandarte» fue una suposición de su descubridor, Leonard Woolley." },
+        { "id": "piedra-rosetta", "qid": "Q48584", "kind": "object", "sprite": "stele", "material": "granite", "title": "Piedra de Rosetta", "year": "196 a. C.", "artist": "Egipto ptolemaico", "medium": "Granodiorita", "story": "Un decreto del rey Ptolomeo V grabado en tres escrituras: jeroglífica, demótica y griego antiguo. Soldados franceses la hallaron en 1799 cerca de Rashid (Rosetta) y, tras la derrota de Napoleón en Egipto, pasó a manos británicas. Gracias a ella, Champollion descifró los jeroglíficos en 1822." },
+        { "id": "hoa-hakananaia", "qid": "Q2040958", "kind": "object", "sprite": "moai", "material": "basalt", "title": "Hoa Hakananai'a", "year": "c. 1000–1200", "artist": "Cultura rapanui", "medium": "Basalto", "story": "Un moái de basalto de casi dos metros y medio, con relieves del culto del hombre-pájaro en la espalda. La tripulación del barco británico HMS Topaze se lo llevó de Rapa Nui en 1868. Su nombre suele traducirse como «amigo robado», y la isla reclama su devolución." },
+        { "id": "ajedrez-lewis", "qid": "Q217796", "kind": "object", "sprite": "vitrine", "material": "marble", "year": "c. 1150–1200", "artist": "Probablemente Noruega", "medium": "Marfil de morsa y diente de ballena", "file": "Lewis Chessmen, British Museum.jpg", "story": "Piezas de ajedrez halladas en 1831 en la isla de Lewis, en Escocia. Son 93 en total: la mayoría está en el Museo Británico y el resto en Edimburgo. Las reinas se sostienen la cara con la mano y algunos guerreros muerden su escudo." },
+        { "id": "joven-memnon", "qid": "Q131141", "kind": "object", "sprite": "bust", "material": "granite", "year": "c. 1250 a. C.", "artist": "Antiguo Egipto, dinastía XIX", "medium": "Granito", "story": "Fragmento de una estatua colosal de Ramsés II, del templo funerario del faraón en Tebas, tallado en un bloque de granito de dos colores. Pesa más de siete toneladas. Giovanni Belzoni lo trasladó en 1816, y su llegada a Londres inspiró el poema Ozymandias, de Shelley." },
+        { "id": "vaso-portland", "qid": "Q609292", "kind": "object", "sprite": "vase", "material": "glass", "title": "Vaso Portland", "year": "c. 1–25 d. C.", "artist": "Roma imperial", "medium": "Vidrio camafeo", "story": "Un vaso romano con figuras blancas talladas sobre un fondo azul muy oscuro. En 1845 un visitante lo hizo añicos junto con su vitrina; fue reconstruido a partir de más de doscientos fragmentos. Inspiró las célebres cerámicas de Josiah Wedgwood." },
+        { "id": "casco-sutton-hoo", "qid": "Q1603141", "kind": "object", "sprite": "vitrine", "material": "bronze", "year": "Comienzos del siglo VII", "artist": "Inglaterra anglosajona", "medium": "Hierro y bronce estañado", "file": "Sutton Hoo helmet 2016.png", "story": "Hallado en 1939 en el barco funerario de Sutton Hoo, en Suffolk, posiblemente la tumba del rey Redvaldo de Anglia Oriental. Apareció deshecho en cientos de fragmentos oxidados. La nariz, las cejas y el bigote forman juntos la figura de un dragón volando." }
+      ]
+    },
+    {
+      "id": "hermitage",
+      "name": "Museo del Hermitage",
+      "short": "Hermitage",
+      "city": "San Petersburgo",
+      "country": "Rusia",
+      "founded": "1764",
+      "blurb": "La colección de Catalina la Grande, desplegada en el Palacio de Invierno.",
+      "theme": { "wallStyle": "damask", "wall": [38, 104, 80], "trim": [176, 136, 52], "floorStyle": "herring", "floorA": [170, 120, 70], "floorB": [110, 72, 44], "ceil": [232, 226, 206], "accent": "#50d0a0" },
+      "layout": [[0, 0], [0, 1], [1, 1], [1, 2]],
+      "works": [
+        { "id": "madonna-litta", "qid": "Q1327676", "kind": "painting", "year": "c. 1490", "artist": "Leonardo da Vinci (atribuida)", "medium": "Temple sobre lienzo (transferido de tabla)", "story": "La Virgen amamanta al niño, que mira de reojo hacia afuera del cuadro. Debe su nombre a la familia Litta, de Milán, que la vendió al zar Alejandro II en 1865. Su autoría se discute: muchos expertos creen que la ejecutó un discípulo de Leonardo sobre un diseño del maestro." },
+        { "id": "madonna-benois", "qid": "Q1142058", "kind": "painting", "title": "Madonna Benois", "year": "c. 1478–1480", "artist": "Leonardo da Vinci", "medium": "Óleo sobre lienzo (transferido de tabla)", "story": "Una de las primeras obras que Leonardo pintó por su cuenta. María, apenas una adolescente, ríe mientras el niño examina una flor con total seriedad. Su paradero fue un misterio durante siglos, hasta que el arquitecto Leon Benois la exhibió en San Petersburgo en 1909; el Hermitage la compró en 1914." },
+        { "id": "danae-rembrandt", "qid": "Q2294441", "kind": "painting", "story": "Dánae recibe a Zeus, que llega convertido en una luz dorada. Rembrandt la pintó en 1636 y la retocó años más tarde. En 1985 un hombre la atacó con ácido y un cuchillo; la restauración llevó doce años y la tela volvió a exhibirse en 1997." },
+        { "id": "tanedor-laud", "qid": "Q55647084", "kind": "painting", "title": "El tañedor de laúd", "year": "c. 1595–1596", "story": "Un joven canta acompañándose con el laúd; la partitura abierta es legible y corresponde a madrigales de Jacques Arcadelt. Caravaggio la pintó para el marqués Vincenzo Giustiniani. Las flores, la fruta y el violín sobre la mesa son una naturaleza muerta completa dentro del cuadro." },
+        { "id": "judit-giorgione", "qid": "Q2537695", "kind": "painting", "year": "c. 1504", "medium": "Óleo sobre lienzo (transferido de tabla)", "story": "Judit apoya el pie, con toda calma, sobre la cabeza cortada de Holofernes. Es una de las pocas pinturas atribuidas con seguridad a Giorgione, que murió joven. Llegó al Hermitage en 1772, cuando Catalina la Grande compró la colección Crozat; entonces se la creía de Rafael." },
+        { "id": "joven-cuclillas", "qid": "Q2440879", "kind": "object", "sprite": "torso", "material": "marble", "year": "c. 1530–1534", "medium": "Mármol", "story": "La única escultura de Miguel Ángel en Rusia. Un muchacho se encorva sobre sus pies, tallado en un bloque de apenas 54 centímetros y dejado sin terminar. Se cree que estaba destinado a la Capilla de los Médici, en Florencia." },
+        { "id": "reloj-pavo-real", "qid": "Q1679443", "kind": "object", "sprite": "vitrine", "material": "gold", "year": "Década de 1770", "medium": "Bronce dorado, plata y vidrio", "story": "Un autómata dorado de tamaño natural: al dar la hora, el búho gira la cabeza, el pavo real despliega la cola y el gallo canta. Lo fabricó el taller londinense de James Cox, y el príncipe Potemkin lo compró para Catalina la Grande. Todavía funciona." }
+      ]
+    },
+    {
+      "id": "moma",
+      "name": "Museum of Modern Art",
+      "short": "MoMA",
+      "city": "Nueva York",
+      "country": "Estados Unidos",
+      "founded": "1929",
+      "blurb": "El museo que le enseñó al siglo XX a mirar el arte moderno.",
+      "theme": { "wallStyle": "white", "wall": [236, 234, 228], "trim": [180, 178, 172], "floorStyle": "wood", "floorA": [196, 170, 130], "floorB": [184, 156, 116], "ceil": [244, 244, 240], "accent": "#ff6a4c" },
+      "layout": [[0, 0], [1, 0], [1, 1], [0, 1], [0, 2]],
+      "works": [
+        { "id": "noche-estrellada", "qid": "Q45585", "kind": "painting", "story": "Van Gogh la pintó en junio de 1889 en el asilo de Saint-Rémy, de memoria y durante el día, a partir de la vista desde su ventana. El pueblo es en parte inventado: la aguja de la iglesia recuerda a las de su Holanda natal. Él mismo la consideró un fracaso; hoy es una de las imágenes más reconocidas del arte." },
+        { "id": "gitana-dormida", "qid": "Q1219263", "kind": "painting", "story": "Una mujer duerme en el desierto bajo la luna, junto a su mandolina y un cántaro, mientras un león la olfatea sin atacarla. Rousseau, empleado de aduanas y pintor autodidacta, nunca salió de Francia. Ofreció el cuadro a su ciudad natal, Laval, que lo rechazó." },
+        { "id": "sueno-rousseau", "qid": "Q548141", "kind": "painting", "story": "La última gran obra de Rousseau, terminada meses antes de morir. Una mujer desnuda en un sofá aparece en medio de una selva con leones, aves, un elefante y un encantador de serpientes. El pintor armó esa jungla visitando el jardín botánico de París." },
+        { "id": "banista-cezanne", "qid": "Q2520343", "kind": "painting", "title": "El bañista", "year": "c. 1885", "story": "Un muchacho camina pensativo en un paisaje casi vacío. Cézanne no trabajó con modelo al aire libre: se basó en una fotografía de estudio. Las pinceladas en bloques y los contornos quebrados influyeron de manera decisiva en Picasso y Matisse." },
+        { "id": "esperanza-ii", "qid": "Q19883512", "kind": "painting", "year": "1907–1908", "medium": "Óleo, oro y platino sobre lienzo", "story": "Una mujer embarazada inclina la cabeza sobre su vientre; del vestido asoma una calavera, y a sus pies tres mujeres acompañan el gesto. Klimt combinó óleo con oro y platino, como en los mosaicos bizantinos. El embarazo era un tema casi ausente del arte occidental." },
+        { "id": "ciudad-se-levanta", "qid": "Q587514", "kind": "painting", "story": "Considerada la primera gran pintura futurista. Boccioni se inspiró en la construcción de una central eléctrica en las afueras de Milán: caballos y obreros se funden en un torbellino de color. Para los futuristas, el trabajo, la velocidad y la ciudad moderna eran los nuevos temas del arte." },
+        { "id": "broadway-boogie-woogie", "qid": "Q2915406", "kind": "painting", "year": "1942–1943", "story": "Mondrian llegó a Nueva York en 1940 huyendo de la guerra, y se fascinó con la grilla de Manhattan y con el jazz. Reemplazó sus líneas negras por pequeños bloques de color que parpadean como luces de tránsito. Fue su última pintura terminada." },
+        { "id": "olivos", "qid": "Q9212498", "kind": "painting", "title": "Los olivos", "story": "Pintada en junio de 1889, es la pareja diurna de La noche estrellada: Van Gogh las envió juntas a su hermano Theo. Los olivos, el suelo y las montañas de los Alpilles ondulan con el mismo ritmo, bajo una nube que parece otro personaje." }
+      ]
+    }
+  ]
+}
