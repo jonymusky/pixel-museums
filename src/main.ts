@@ -6,6 +6,9 @@ import content from '../content/museums.json';
 import manifestJson from './data/manifest.json';
 import { buildWorld, type MuseumDef, type World, type WorkDef } from './engine/world';
 import { Renderer, move, W, H, type Player } from './engine/raycaster';
+import { audio } from './audio/engine';
+import { TUNES } from './audio/tunes';
+import { GAMES, openGame, closeGame, type GameWork } from './games';
 
 interface ManifestEntry {
   title: string;
@@ -67,6 +70,39 @@ function renderLobby() {
       return b;
     }),
   );
+  $('games').replaceChildren(
+    ...GAMES.map((g) => {
+      const a = document.createElement('a');
+      a.className = 'museum game';
+      a.href = `#juego-${g.id}`;
+      a.innerHTML = `<span class="g-icon" aria-hidden="true">${g.icon}</span><span class="m-name">${g.name}</span><span class="m-blurb">${g.blurb}</span><span class="m-foot"><span>${gameWorks.length} OBRAS</span><span class="go">JUGAR ▶</span></span>`;
+      return a;
+    }),
+  );
+}
+
+const gameWorks: GameWork[] = museums.flatMap((m) =>
+  m.works
+    .filter((w) => manifest[w.id])
+    .map((w) => ({ id: w.id, title: manifest[w.id].title, artist: manifest[w.id].artist, museum: m.short, painting: w.kind === 'painting', size: manifest[w.id].detail, img: artUrl(w.id, 'detail') })),
+);
+
+// ---------- arcade ----------
+const arcade = $('arcade');
+function showArcade(id: string) {
+  const g = GAMES.find((x) => x.id === id)!;
+  lobby.hidden = true;
+  arcade.hidden = false;
+  // the display font has no accented capitals
+  $('a-title').textContent = g.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+  window.scrollTo(0, 0);
+  openGame(id, $('a-root'), $('a-status'), gameWorks);
+}
+function hideArcade() {
+  if (arcade.hidden) return;
+  closeGame();
+  $('a-root').replaceChildren();
+  arcade.hidden = true;
 }
 
 // ---------- game ----------
@@ -86,6 +122,7 @@ let last = 0;
 let walk = 0;
 let moved = false;
 let currentTarget: string | null = null;
+let stepCount = 0;
 
 function fitStage() {
   const stage = $('stage');
@@ -132,7 +169,9 @@ async function enter(m: MuseumDef) {
   hint.textContent = matchMedia('(pointer: coarse)').matches
     ? 'USÁ LAS FLECHAS PARA CAMINAR · VER PARA LEER'
     : 'FLECHAS O WASD: CAMINAR · ESPACIO: VER OBRA · M: MAPA';
+  if (TUNES[m.id]) hint.textContent += `\n♪ ${TUNES[m.id].name.toUpperCase()}`;
   hint.hidden = false;
+  audio.play(m.id);
   cancelAnimationFrame(raf);
   last = performance.now();
   raf = requestAnimationFrame(frame);
@@ -143,7 +182,8 @@ function leave() {
   world = null;
   museum = null;
   keys.clear();
-  closeDetail();
+  audio.play(null);
+  detail.hidden = true;
   game.hidden = true;
   lobby.hidden = false;
   document.body.classList.remove('playing');
@@ -166,6 +206,12 @@ function frame(now: number) {
       const sy = Math.sin(player.a);
       move(world, player, (cx * fwd - sy * strafe) * sp, (sy * fwd + cx * strafe) * sp);
       walk += dt * 9;
+      // one footfall per half bob cycle, voiced for the floor underfoot
+      const n = Math.floor(walk / Math.PI);
+      if (n !== stepCount) {
+        stepCount = n;
+        audio.footstep(/wood|herring/.test(museum.theme.floorStyle) ? 'wood' : 'stone');
+      }
       if (!moved) {
         moved = true;
         hint.hidden = true;
@@ -223,6 +269,7 @@ function openDetail(id: string) {
   a.textContent = 'Imagen original';
   credit.append(a, ` · ${info.credit} · ${info.license}`);
   detail.hidden = false;
+  audio.sfx('open');
   // whole-number upscale so every source pixel stays a clean square
   const box = img.parentElement!;
   const maxH = window.innerHeight * (window.innerWidth <= 720 ? 0.42 : 0.72);
@@ -235,6 +282,7 @@ function openDetail(id: string) {
 function closeDetail() {
   if (detail.hidden) return;
   detail.hidden = true;
+  audio.sfx('close');
   canvas.focus();
 }
 
@@ -246,6 +294,7 @@ function interact() {
 // ---------- input ----------
 const GAME_KEYS = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space'];
 window.addEventListener('keydown', (e) => {
+  if (!arcade.hidden && e.code === 'Escape') location.hash = '';
   if (game.hidden) return;
   if (e.code === 'Escape') {
     if (!detail.hidden) closeDetail();
@@ -294,12 +343,42 @@ for (const b of document.querySelectorAll<HTMLButtonElement>('#pad [data-k]')) {
 // a clicked HUD button must not keep focus, or Space would press it again instead of opening the work
 for (const b of document.querySelectorAll<HTMLButtonElement>('#game button')) b.addEventListener('click', () => b.blur());
 
+// ---------- sound ----------
+// browsers keep audio locked until a real gesture; a deep link like /#prado has none until the first key or tap
+for (const ev of ['pointerup', 'keydown', 'click', 'touchend'] as const) window.addEventListener(ev, () => audio.unlock(), { capture: true });
+const muteButtons = [...document.querySelectorAll<HTMLButtonElement>('.mute')];
+function paintMute() {
+  for (const b of muteButtons) {
+    b.textContent = audio.muted ? '♪ MUDO' : '♪ SONIDO';
+    b.setAttribute('aria-label', audio.muted ? 'Activar sonido' : 'Silenciar sonido');
+    b.setAttribute('aria-pressed', String(!audio.muted));
+  }
+}
+for (const b of muteButtons)
+  b.addEventListener('click', () => {
+    audio.setMuted(!audio.muted);
+    paintMute();
+  });
+paintMute();
+if (import.meta.env.DEV) (window as unknown as { pmAudio: typeof audio }).pmAudio = audio;
+
 // ---------- routing ----------
 function route() {
   const id = location.hash.slice(1);
   const m = museums.find((x) => x.id === id);
-  if (m) void enter(m);
-  else if (!game.hidden) leave();
+  const g = GAMES.find((x) => `juego-${x.id}` === id);
+  if (m) {
+    hideArcade();
+    void enter(m);
+    return;
+  }
+  if (!game.hidden) leave();
+  if (g) showArcade(g.id);
+  else {
+    hideArcade();
+    lobby.hidden = false;
+    renderLobby();
+  }
 }
 window.addEventListener('hashchange', route);
 renderLobby();

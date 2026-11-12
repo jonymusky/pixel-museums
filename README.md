@@ -12,6 +12,11 @@ Elegís un museo, caminás por sus salas y te acercás a cada pintura o escultur
 Louvre · Museo del Prado · Galería Uffizi · Museos Vaticanos · Rijksmuseum · National Gallery ·
 Museo de Orsay · The Met · Museo Británico · Hermitage · MoMA
 
+## Sonido y juegos
+
+- Cada museo tiene su propia melodía chiptune original, compuesta en código (un vals para el Louvre, una cadencia andaluza para el Prado, canto llano con eco para el Vaticano, ragtime para el Met, boogie para el MoMA…). Los pasos suenan distinto sobre madera o piedra. El botón **♪** silencia todo y recuerda la preferencia.
+- **Sala de juegos**, con las mismas obras: *Píxel a píxel* (reconocé la obra mientras se va definiendo), *Memotest* y *Rompecabezas*.
+
 ## Controles
 
 | Acción | Teclado | Táctil |
@@ -28,6 +33,7 @@ El progreso (obras vistas) se guarda en el navegador. Cada museo tiene enlace di
 
 - **Motor**: un raycaster propio en TypeScript sobre un `<canvas>` de 320×180, escalado sin suavizado. Sin frameworks ni dependencias en tiempo de ejecución.
 - **Salas**: cada museo es un bloque de datos en [`content/museums.json`](content/museums.json): colores, disposición de salas y lista de obras. El mapa, los marcos y los pedestales se generan a partir de eso.
+- **Sonido**: sintetizado con Web Audio, sin archivos de audio. Las melodías son datos en [`src/audio/tunes.ts`](src/audio/tunes.ts).
 - **Texturas y esculturas**: paredes, pisos, techos, marcos y las siluetas de las esculturas se dibujan por código ([`src/engine/textures.ts`](src/engine/textures.ts)).
 - **Obras**: `npm run art` consulta Wikidata (título, autor, año, técnica) y Wikimedia Commons (imagen y licencia), descarga cada imagen una sola vez y genera dos versiones pixeladas con paleta reducida: una para la pared y otra para la ficha. El sitio no pide nada a servicios externos en tiempo de ejecución.
 

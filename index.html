@@ -15,9 +15,12 @@
       <header class="hero">
         <p class="kicker">★ ENTRADA LIBRE ★</p>
         <h1>PIXEL<br />MUSEUMS</h1>
+        <button class="btn mute" type="button"></button>
         <p class="lead">Los museos más famosos del mundo, sala por sala y píxel por píxel. Elegí uno, caminá por sus galerías y acercate a cada obra para conocer su historia.</p>
       </header>
       <section id="museums" class="grid" aria-label="Museos"></section>
+      <h2 class="section">★ SALA DE JUEGOS ★</h2>
+      <section id="games" class="grid" aria-label="Juegos"></section>
       <footer class="foot">
         <p>Las obras son reproducciones pixeladas de imágenes de dominio público o con licencia libre de Wikimedia Commons. <a href="https://github.com/jonymusky/pixel-museums/blob/main/CREDITS.md">Créditos</a> · <a href="https://github.com/jonymusky/pixel-museums">Código</a></p>
       </footer>
@@ -30,6 +33,7 @@
           <div class="hud-left">
             <button id="exit" class="btn" type="button">◀ MUSEOS</button>
             <button id="map" class="btn" type="button" aria-pressed="true">MAPA</button>
+            <button class="btn mute" type="button"></button>
           </div>
           <div class="where"><span id="hud-name"></span><span id="hud-count"></span></div>
           <span></span>
@@ -49,6 +53,16 @@
         <button id="act" class="pb act" type="button">VER</button>
       </div>
     </div>
+
+    <main id="arcade" hidden>
+      <header class="a-head">
+        <a class="btn" href="#">◀ MUSEOS</a>
+        <button class="btn mute" type="button"></button>
+        <h2 id="a-title"></h2>
+        <p id="a-status" aria-live="polite"></p>
+      </header>
+      <div id="a-root"></div>
+    </main>
 
     <div id="detail" class="detail" hidden role="dialog" aria-modal="true" aria-labelledby="d-title">
       <article class="card">

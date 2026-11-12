@@ -233,20 +233,30 @@ h1 {
   padding-right: calc(var(--px) * 3);
 }
 
-.hud .btn,
-.close {
+.btn {
+  display: inline-block;
   pointer-events: auto;
   font-family: var(--display);
-  font-size: inherit;
+  font-size: 10px;
+  line-height: 1.3;
+  text-decoration: none;
   padding: 0.7em 0.9em;
   background: #14121cd9;
   color: var(--ink);
   border: 2px solid var(--ink);
 }
 
-.hud .btn:hover {
+.hud .btn {
+  font-size: inherit;
+}
+
+.btn:hover:not(:disabled) {
   background: var(--ink);
   color: var(--bg);
+}
+
+.mute[aria-pressed='false'] {
+  opacity: 0.6;
 }
 
 .hud-left {
@@ -307,6 +317,10 @@ h1 {
   50% {
     background: var(--gold);
   }
+}
+
+.hint {
+  white-space: pre-line;
 }
 
 .hint,
@@ -543,4 +557,238 @@ h1 {
   .hint {
     bottom: calc(var(--px) * 12);
   }
+}
+
+/* ---------- lobby: games ---------- */
+.hero .mute {
+  margin: 0 0 20px;
+}
+
+.section {
+  font-family: var(--display);
+  font-size: 14px;
+  color: var(--gold);
+  text-align: center;
+  margin: 56px 0 24px;
+}
+
+a.museum {
+  color: inherit;
+  text-decoration: none;
+  --accent: #70d0f0;
+}
+
+.g-icon {
+  display: grid;
+  place-items: center;
+  height: 96px;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--accent);
+  background: #0e0c14;
+  border: 4px solid var(--line);
+}
+
+/* ---------- arcade ---------- */
+#arcade {
+  max-width: 560px;
+  min-height: 100dvh;
+  margin: 0 auto;
+  padding: 16px 16px 48px;
+}
+
+.a-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px 8px;
+  align-items: center;
+  justify-items: start;
+  margin-bottom: 20px;
+}
+
+.a-head h2 {
+  font-family: var(--display);
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+#a-status {
+  font-family: var(--display);
+  font-size: 10px;
+  color: var(--gold);
+  margin: 0;
+  justify-self: end;
+  text-align: right;
+}
+
+#a-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.g-frame {
+  padding: 8px;
+  background: #0e0c14;
+  border: 4px solid #000;
+  box-shadow:
+    0 0 0 4px var(--gold),
+    8px 8px 0 4px #000;
+  line-height: 0;
+}
+
+.g-canvas {
+  display: block;
+}
+
+.g-meter {
+  display: flex;
+  gap: 4px;
+}
+
+.g-meter span {
+  width: 20px;
+  height: 8px;
+  background: var(--gold);
+}
+
+.g-meter span.off {
+  background: #3a3454;
+}
+
+.g-opts {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.g-opt,
+.g-btn {
+  width: 100%;
+  min-height: 44px;
+  font-family: var(--body);
+  font-size: 19px;
+  text-align: left;
+  background: var(--panel);
+  border-width: 4px;
+  border-color: #000;
+  box-shadow: inset 0 0 0 2px #4a4468;
+}
+
+.g-btn {
+  font-family: var(--display);
+  font-size: 11px;
+  text-align: center;
+  background: var(--gold);
+  color: #000;
+}
+
+.g-btn.ghost {
+  background: var(--panel);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+}
+
+.g-opt.right {
+  background: #2e8a50;
+  color: #fff;
+  opacity: 1;
+}
+
+.g-opt.wrong {
+  background: #b8432f;
+  color: #fff;
+}
+
+.g-opt:disabled {
+  cursor: default;
+}
+
+.g-note {
+  min-height: 2.7em;
+  margin: 0;
+  text-align: center;
+  color: var(--ink-dim);
+}
+
+.g-end {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.g-end p {
+  margin: 0;
+}
+
+.g-big {
+  font-family: var(--display);
+  font-size: 24px;
+  line-height: 1.4;
+  color: var(--gold);
+}
+
+.g-memo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: min(100%, 440px);
+}
+
+.g-card {
+  aspect-ratio: 1;
+  padding: 0;
+  overflow: hidden;
+  border: 4px solid #000;
+  background:
+    repeating-linear-gradient(45deg, #3a3454 0 6px, #2c2844 6px 12px);
+  box-shadow: inset 0 0 0 2px var(--gold);
+}
+
+.g-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+  visibility: hidden;
+}
+
+.g-card.up img {
+  visibility: visible;
+}
+
+.g-card.done {
+  box-shadow: inset 0 0 0 4px #4ccf7a;
+}
+
+.g-board {
+  display: grid;
+  gap: 0;
+}
+
+.g-tile {
+  padding: 0;
+  border: 1px solid #000;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.g-tile.sel {
+  outline: 4px solid var(--gold);
+  outline-offset: -4px;
+  filter: brightness(1.25);
+}
+
+.g-tile.ok {
+  border-color: transparent;
+}
+
+.g-ref {
+  border: 4px solid #000;
+  box-shadow: 0 0 0 2px #4a4468;
 }
